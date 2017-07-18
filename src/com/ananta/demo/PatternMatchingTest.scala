@@ -8,21 +8,21 @@ object PatternMatchingTest {
     case "add" => "Addition"
     case 2 => "Hello"
     case true => 1
-    case _ => println("Invalid")
+    case _ => "Invalid"
   }
   
   def main(args: Array[String]): Unit = {
     print("please select a number between 1 and 4 : ")
-    var i:Int=readInt()
+    var i:Int=3
     i match {
       case 1 => println(i+" is selected")
       case 2 => println(i+" is selected")
       case 3 => println(i+" is selected")
       case 4 => println(i+" is selected")
-      case _ => println("Invalid selection ! Please try again");
+      case _ => println("Invalid selection ! Please try again")
     }
-//    var j:Any=readLine()
-    println(find(readLine()))
-    println(find(readInt()))
+    println(find("add"))
+    println(find(true))
+    println(find("default_case"))
   }
 }
