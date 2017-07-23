@@ -11,6 +11,6 @@ object NamedArgument {
     println("Name : "+fName+" "+lName)
   }
   def printNameSwap(lName:String,fName:String){
-    println("Full Name : "+fName+" "+fName)
+    println("Full Name : "+lName+" "+fName)
   }
 }
