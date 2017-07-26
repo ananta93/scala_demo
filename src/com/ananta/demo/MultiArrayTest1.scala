@@ -9,8 +9,9 @@ object MultiArrayTest1 {
     dArray(0)(1)=13
     dArray(1)(0)=14
     dArray(1)(1)=15
-    for(i<-0 to 1; j<-0 to 2){
-      println(i,j)
+    for(i<-0 to 1; j<-0 until 2){
+      print(i,j)
+      println(" => "+dArray(i)(j))
     }
   }
 }
