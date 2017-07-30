@@ -17,8 +17,8 @@ object SetTestFirst {
     var set7 = Set(1,3,2,3,4,3)
     val sortedSet1 = SortedSet(2,4,1,6,3,5,1,8,9,7,3)
     set4+="Bootstrap" // Adding element to the set
-    set7-=3
-    var mergeSetResult = set3 ++ set4 // Merging two the sets
+    set7-=3  //removing element from the set
+    var mergeSetResult = set3 ++ set4 // Merging the two sets
     var hashSet1 = HashSet(1,4,3,7,5,6)
     var bitSet1 = BitSet(2,3,8,5,9)
     var listSet1 =ListSet(25,22,35,19,31)
