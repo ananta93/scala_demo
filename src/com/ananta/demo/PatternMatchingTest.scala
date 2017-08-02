@@ -4,11 +4,13 @@ package com.ananta.demo
 
 object PatternMatchingTest {
   
-  def find(x:Any):Any = x match{
+  def find(x:Any):Any = {
+    x match{
     case "add" => "Addition"
     case 2 => "Hello"
     case true => 1
     case _ => "Invalid"
+    }
   }
   
   def main(args: Array[String]): Unit = {

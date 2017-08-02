@@ -7,8 +7,8 @@ object MethodOverloadingTest {
   }
   
   def area(r:Double):Double={
-    var x:Double = 3.141
-    (2*x*r)
+    val pi:Double = 3.141
+    (2*pi*r)
   }
   
   def main(args: Array[String]): Unit = {

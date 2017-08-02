@@ -46,7 +46,7 @@ object LoopsInScalaDemo {
       //for each loop
       print("\nFor each loop  : ")
       var list = List(10,20,30,40,50)
-      list.foreach {(element:Int)=>print(element+" ")} 
+      list.foreach {(element)=>print(element+" ")} 
       
       //for loop by
       print("\nFor loop by  : ")

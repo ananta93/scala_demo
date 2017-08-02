@@ -22,8 +22,8 @@ object FunctionTest {
   }
   
   //default argument
-  def functionDefaultArgument(m:Int, n:Int=10):Int={ // default argument should be assigned to parameter at the end
-   (m+n)
+  def functionDefaultArgument(m:Int, n:Int=10,p:Int=15):Int={ // default argument should be assigned to parameter at the end
+   (m+n-p)
   }
   //Named argument
   def functionNamedArgument(lName:String,fName:String){
@@ -36,7 +36,7 @@ object FunctionTest {
     println(resultFromFunction)
     var resultFromRecursive=recursiveFunction(5)
     println("Factorial from recursive function : "+resultFromRecursive)
-    var resultDefault=functionDefaultArgument(20)
+    var resultDefault=functionDefaultArgument(20,20)
     println("Addition from default argument : "+resultDefault)
     functionNamedArgument(fName="Ananta", lName="Das")
   }
